@@ -33,20 +33,22 @@ function validarEmail(input) {
 }
 
 let checkBox = document.getElementById("terminos");
+
 function validarCheckBox() {
   if (checkBox.checked) {
-    checkBox.className = "form-control is-valid";
-
-    return true;
-    
+    checkBox.className = "form-control is-valid";   
   } else {
     checkBox.className = "form-control is-invalid";
-    return false;
+   
   }
- 
+  
 }
 
 checkBox.addEventListener("change",validarCheckBox)
+
+
+
+
 
 function validarGeneral(event){
 event.preventDefault();
