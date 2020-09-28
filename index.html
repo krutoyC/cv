@@ -10,7 +10,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/516e9f576a.js" crossorigin="anonymous"></script>
-
+  <scripttype="text /javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <scripttype="text /javascript">
+      (function() {
+      emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
+      })();
+      </script>
 
 
 
@@ -79,10 +85,10 @@
             <h5 class="card-title">Opinión Personal</h5>
 
             <p class="card-text">
-              Una persona aplicada que busca ayudar y auto superarse, estoy en
-              una constante formación y búsqueda de nuevas habilidades y
-              mejorar las ya aplicadas, responsabilidad y buena voluntad. Mis
-              hobbies son los deportes y pesas, ayuda a mantenerme
+              Una persona aplicada que busca ayudar y auto superarse, sobre todo aprender. Estoy en
+              una constante formación y búsqueda de nuevas habilidades, mejorar las ya aplicadas, responsabilidad y
+              buena voluntad.
+              Mis hobbies son los deportes y pesas, ayuda a mantenerme
               equilibrado.
             </p class="text-center">
             <!-- //aqui empieza la ventana modal -->
@@ -93,13 +99,13 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enviame tu Msj</h5>
+                    <h5 class="modal-title" id="msj">Enviame tu Msj</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <form onsubmit="">
+                    <form onsubmit="validarGeneral(event)">
                       <div class="form-group">
                         <label class="col-form-label">Nombre:</label>
                         <input type="text" class="form-control" id="nombre" onblur="revisar(this)" required>
@@ -108,19 +114,19 @@
                       </div>
                       <div class="form-group">
                         <label class="col-form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido"  onblur="revisar(this)" required>
+                        <input type="text" class="form-control" id="apellido" onblur="revisar(this)" required>
                         <div class="valid-feedback">Correcto</div>
                         <div class="invalid-feedback">Inconrrecto</div>
                       </div>
                       <div class="form-group">
                         <label class="col-form-label">Email:</label>
-                        <input type="text" class="form-control" id="email"  onblur="revisar(this)" required>
+                        <input type="text" class="form-control" id="email" onblur="revisar(this)" required>
                         <div class="valid-feedback">Correcto</div>
                         <div class="invalid-feedback">Inconrrecto</div>
                       </div>
                       <div class="form-group">
                         <label class="col-form-label">Mensaje:</label>
-                        <textarea class="form-control " id="message-text"  onblur="revisar(this)" required></textarea>
+                        <textarea class="form-control " id="mensaje" onblur="revisar(this)" required></textarea>
                         <div class="valid-feedback">Correcto</div>
                         <div class="invalid-feedback">Inconrrecto</div>
                       </div>
@@ -131,173 +137,177 @@
                             Aceptas terminos y condiciones.
                           </label>
                           <div class="valid-feedback">Genial</div>
-                        <div class="invalid-feedback">Para continuar debes aceptar.</div>
+                          <div class="invalid-feedback">Para continuar debes aceptar.</div>
+                        </div>
                       </div>
+                    </form>
                   </div>
-             </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-        </div>
-      </div>
-  </div>
-  </section>
-  <hr>
-  <h5 class="text-center my-3 text-light bg-dark w-100 ">Experiencia Laboral</h5>
-  <section class="container d-flex justify-content-around">
-    <div class="row">
-      <div class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
-        <h5 class="card-header text-center">Agente Telefónico-Teleperformance</h5>
-        <div class="card-body">
-
-          <p class="card-text">Brindar soluciones y garantias confirmables del servicio</p>
-          <span class="badge badge-warning">Cobranzas</span>
-          <span class="badge badge-warning">Manejo de programas</span>
-
-        </div>
-      </div>
-      <div class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
-        <h5 class="card-header text-center">Agente Telefónico-Teleperformance</h5>
-        <div class="card-body">
-
-          <p class="card-text">Brindar soluciones y garantias confirmables del servicio</p>
-          <span class="badge badge-warning">Cobranzas</span>
-          <span class="badge badge-warning">Manejo de programas</span>
-
-        </div>
-      </div>
-      <div class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
-        <h5 class="card-header text-center">Agente Telefónico-Teleperformance</h5>
-        <div class="card-body">
-
-          <p class="card-text">Brindar soluciones y garantias confirmables del servicio</p>
-          <span class="badge badge-warning">Cobranzas</span>
-          <span class="badge badge-warning">Manejo de programas</span>
-
-        </div>
-      </div>
-      <div class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
-        <h5 class="card-header text-center">Encargado de Depósito-Lea Cultural</h5>
-        <div class="card-body">
-
-          <p class="card-text">Atención al público, venta, recepción de pedidos, preparación, mantenimiento.</p>
-          <span class="badge badge-warning">Cobranzas</span>
-          <span class="badge badge-warning">Manejo de programas</span>
-
-        </div>
-      </div>
-  </section>
-
-  <h5 class="text-center my-3 text-light bg-dark w-100">Estudios Realizados</h5>
-  <hr>
-  <section class="container-fluid ">
-    <div class="row justify-content-around">
-
-      <div class="card text-white bg-dark mb-3 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
-        <div class="card-header">Software Developer</div>
-        <div class="card-body">
-          <h5 class="card-title">RollingCode</h5>
-          <p class="card-text"><span class="badge badge-pill badge-info">HTML</span>
-            <span class="badge badge-pill badge-info">CSS</span>
-            <span class="badge badge-pill badge-info">JS</span>
-            <span class="badge badge-pill badge-info">Bootstrap</span>
-          </p>
-        </div>
-      </div>
-      <div class="card text-white bg-dark mb-3 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
-        <div class="card-header">Iingles/Informatica</div>
-        <div class="card-body">
-          <h5 class="card-title">Nivel Intermedio</h5>
-          <p class="card-text">Certificado</p>
-        </div>
-      </div>
-      <div class="card text-white bg-dark mb-3 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
-        <div class="card-header">Adicionales</div>
-        <div class="card-body">
-          <h5 class="card-title">Certificado</h5>
-          <p class="card-text">
-            <span class="badge badge-pill badge-info">Lic. Biotecnologia</span>
-            <span class="badge badge-pill badge-info">Administración de Empresas</span>
-          </p>
-        </div>
-      </div>
-
-
-      <h5 class="text-center my-3 text-light bg-dark w-100">Developer Skills</h5>
-      <section class="container-fluid">
-        <div class="row d-flex  justify-content-around">
-          <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
-            <p class="my-1 tex-center">HTML</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <p class="my-1 tex-center">CSS</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <p class="my-1 tex-center">Bootstrap</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-          </div>
-
-          <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
-
-
-            <p class="my-1 tex-center">MongoDB</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-          </div>
-          <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
-            <p class="my-1 tex-center">Github</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <p class="my-1 tex-center">Scrum</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-
-
-          </div>
-
-          <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
-            <p class="my-1 tex-center">Node.js</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <p class="my-1 tex-center">React</p>
-            <div class="progress my-1">
-              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
-                aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
 
           </div>
         </div>
+      </div>
+    </section>
+    <hr>
+    <h5 class="text-center my-3 text-light bg-dark w-100 ">Experiencia Laboral</h5>
+    <section class="container d-flex justify-content-around">
+      <div class="row">
+        <div
+          class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
+          <h5 class="card-header text-center">Agente Telefónico-Teleperformance</h5>
+          <div class="card-body">
 
-    </div>
-  </section>
+            <p class="card-text">Brindar soluciones y garantias confirmables del servicio</p>
+            <span class="badge badge-warning">Cobranzas</span>
+            <span class="badge badge-warning">Manejo de programas</span>
+
+          </div>
+        </div>
+        <div
+          class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
+          <h5 class="card-header text-center">Agente Telefónico-Teleperformance</h5>
+          <div class="card-body">
+
+            <p class="card-text">Brindar soluciones y garantias confirmables del servicio</p>
+            <span class="badge badge-warning">Cobranzas</span>
+            <span class="badge badge-warning">Manejo de programas</span>
+
+          </div>
+        </div>
+        <div
+          class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
+          <h5 class="card-header text-center">Agente Telefónico-Teleperformance</h5>
+          <div class="card-body">
+
+            <p class="card-text">Brindar soluciones y garantias confirmables del servicio</p>
+            <span class="badge badge-warning">Cobranzas</span>
+            <span class="badge badge-warning">Manejo de programas</span>
+
+          </div>
+        </div>
+        <div
+          class="card col-sm-12 col-md-6 col-lg-6 my-2 shadow p-3 mb-5 bg-white rounded rounded border border-primary">
+          <h5 class="card-header text-center">Encargado de Depósito-Lea Cultural</h5>
+          <div class="card-body">
+
+            <p class="card-text">Atención al público, venta, recepción de pedidos, preparación, mantenimiento.</p>
+            <span class="badge badge-warning">Cobranzas</span>
+            <span class="badge badge-warning">Manejo de programas</span>
+
+          </div>
+        </div>
+    </section>
+
+    <h5 class="text-center my-3 text-light bg-dark w-100">Estudios Realizados</h5>
+    <hr>
+    <section class="container-fluid ">
+      <div class="row justify-content-around">
+
+        <div class="card text-white bg-dark mb-3 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
+          <div class="card-header">Software Developer</div>
+          <div class="card-body">
+            <h5 class="card-title">RollingCode</h5>
+            <p class="card-text"><span class="badge badge-pill badge-info">HTML</span>
+              <span class="badge badge-pill badge-info">CSS</span>
+              <span class="badge badge-pill badge-info">JS</span>
+              <span class="badge badge-pill badge-info">Bootstrap</span>
+            </p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
+          <div class="card-header">Iingles/Informatica</div>
+          <div class="card-body">
+            <h5 class="card-title">Nivel Intermedio</h5>
+            <p class="card-text">Certificado</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center">
+          <div class="card-header">Adicionales</div>
+          <div class="card-body">
+            <h5 class="card-title">Certificado</h5>
+            <p class="card-text">
+              <span class="badge badge-pill badge-info">Lic. Biotecnologia</span>
+              <span class="badge badge-pill badge-info">Administración de Empresas</span>
+            </p>
+          </div>
+        </div>
+
+
+        <h5 class="text-center my-3 text-light bg-dark w-100">Developer Skills</h5>
+        <section class="container-fluid">
+          <div class="row d-flex  justify-content-around">
+            <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
+              <p class="my-1 tex-center">HTML</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="my-1 tex-center">CSS</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="my-1 tex-center">Bootstrap</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+            </div>
+
+            <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
+
+
+              <p class="my-1 tex-center">MongoDB</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+            </div>
+            <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
+              <p class="my-1 tex-center">Github</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="my-1 tex-center">Scrum</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+
+
+            </div>
+
+            <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
+              <p class="my-1 tex-center">Node.js</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p class="my-1 tex-center">React</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+    </section>
 
   </div>
 
