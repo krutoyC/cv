@@ -54,8 +54,8 @@ console.log("validarGeneral");
 
 if(revisar(getElementById("nombre"))&& revisar(getElementById("apellido"))&& validarEmail(getElementById("email"))&& revisar(getElementById("validarEmail"))&& validarCheckBox()){
   
-  enviarEmail();
   alert("Consulta lista para ser enviada");
+  enviarEmail();
 }else{
   alert("Error en el formulario");
 }
@@ -66,7 +66,7 @@ function enviarEmail(){
     name:"De: "+ document.getElementById("nombre").value+document.getElementById("apellido").value,
     notes: "Email: "+document.getElementById("email").value+"Mensaje: "+document.getElementById("mensaje").value
 };
- 
+ console.log("eviar email")
 emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
