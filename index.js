@@ -68,10 +68,11 @@ function enviarEmail(){
     notes: `Email: ${document.getElementById("email").value}--Mensaje: ${document.getElementById("mensaje").value}`
 };
  console.log("eviar email")
-emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+emailjs.send('gmail', 'template_OPnz7IWr', templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
        console.log('FAILED...', error);
     });
+
 }
