@@ -22,7 +22,7 @@ function revisar(input) {
 }
 
 function validarEmail(input) {
-  let expresionRegular = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/;
+  let expresionRegular = /\w+@\w+\.[a-z]{2,}$/;
   if (input.value !== "" && expresionRegular.test(input.value)) {
     input.className = "form-control is-valid";
     return true;
