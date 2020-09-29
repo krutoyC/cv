@@ -63,8 +63,9 @@ if(revisar(document.getElementById("nombre"))&& revisar(document.getElementById(
 
 function enviarEmail(){
   let templateParams = {
-    name:"De: "+ document.getElementById("nombre").value+document.getElementById("apellido").value,
-    notes: "Email: "+document.getElementById("email").value+"Mensaje: "+document.getElementById("mensaje").value
+    
+    name:`De: ${document.getElementById("nombre").value}${document.getElementById("apellido").value}`,
+    notes: `Email: ${document.getElementById("email").value}--Mensaje: ${document.getElementById("mensaje").value}`
 };
  console.log("eviar email")
 emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
