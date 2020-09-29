@@ -33,28 +33,26 @@ function validarEmail(input) {
 }
 
 let checkBox = document.getElementById("terminos");
-
 function validarCheckBox() {
   if (checkBox.checked) {
-    checkBox.className = "form-control is-valid";   
+    checkBox.className = "form-control is-valid";
+
+    return true;
+    
   } else {
     checkBox.className = "form-control is-invalid";
-   
+    return false;
   }
-  
+ 
 }
 
 checkBox.addEventListener("change",validarCheckBox)
-
-
-
-
 
 function validarGeneral(event){
 event.preventDefault();
 console.log("validarGeneral");
 
-if(revisar(getElementById("nombre"))&& revisar(getElementById("apellido"))&& validarEmail(getElementById("email"))&& revisar(getElementById("validarEmail"))&& validarCheckBox()){
+if(revisar(document.getElementById("nombre"))&& revisar(document.getElementById("apellido"))&& validarEmail(document.getElementById("email"))&& revisar(document.getElementById("mensaje"))&& validarCheckBox()){
   
   alert("Consulta lista para ser enviada");
   enviarEmail();
