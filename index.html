@@ -5,16 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curriculum</title>
+
   <link rel="stylesheet" href="style.css" />
   <!--AGREGAR LAS ETIQUETAS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/516e9f576a.js" crossorigin="anonymous"></script>
-  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">(function() {
-emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
-})();
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">(function () {
+      emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
+    })();
+  </script>
 
 </head>
 
@@ -30,16 +31,13 @@ emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link text-light" href="#">Sobre Mi <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-light" href="#Datos personales">Sobre Mi <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Link</a>
+            <a class="nav-link text-light" href="#Experiencia">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="#">Link</a>
+            <a class="nav-link text-light" href="#Estudios">Estudios</a>
           </li>
         </ul>
       </div>
@@ -51,10 +49,11 @@ emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
     <main class="text-center fondo">
       <img src="./img/icon-pic.png" alt="imagen de ususario" style="width: 200px" py-3 />
       <h3>Carlos M. Rodriguez</h3>
-      <a href="https://www.linkedin.com/in/carlosm-rodriguez/"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/carlosm-rodriguez/" target="_blank"><i class="fab fa-linkedin fa-2x"
+          target="_blank"></i></a>
     </main>
     <section class="container">
-      <h5 class="text-center my-2">Datos personales</h5>
+      <h5 class="text-center my-2" id="Datos personales">Datos personales</h5>
       <div class="row my-2">
         <div class="card col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <ul class="list-group list-group-flush">
@@ -77,7 +76,7 @@ emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
         </div>
         <div class="card col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <div class="card-body text-justify">
-            <h5 class="card-title">Opinión Personal</h5>
+            <h5 class="card-title" id="Enviar Email">Opinión Personal </h5>
 
             <p class="card-text">
               Una persona aplicada que busca ayudar y auto superarse, sobre todo aprender. Estoy en
@@ -150,7 +149,7 @@ emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
       </div>
     </section>
     <hr>
-    <h5 class="text-center my-3 text-light bg-dark w-100 ">Experiencia Laboral</h5>
+    <h5 class="text-center my-3 text-light bg-dark w-100" id="Experiencia">Experiencia Laboral</h5>
     <section class="container d-flex justify-content-around">
       <div class="row">
         <div
@@ -199,7 +198,7 @@ emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
         </div>
     </section>
 
-    <h5 class="text-center my-3 text-light bg-dark w-100">Estudios Realizados</h5>
+    <h5 class="text-center my-3 text-light bg-dark w-100" id="Estudios">Estudios Realizados</h5>
     <hr>
     <section class="container-fluid ">
       <div class="row justify-content-around">
@@ -259,7 +258,11 @@ emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
             </div>
 
             <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
-
+              <p class="my-1 tex-center">Node.js</p>
+              <div class="progress my-1">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
 
               <p class="my-1 tex-center">MongoDB</p>
               <div class="progress my-1">
@@ -286,11 +289,6 @@ emailjs.init("user_QaWwDsUFdTCHAZwnY7NLk");
             </div>
 
             <div class="card border-dark mb-3 col-sm-12 col-md-6 col-lg-6">
-              <p class="my-1 tex-center">Node.js</p>
-              <div class="progress my-1">
-                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="10"
-                  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
 
               <p class="my-1 tex-center">React</p>
               <div class="progress my-1">
