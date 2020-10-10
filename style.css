@@ -10,3 +10,21 @@
     padding: 2px !important;
    
 }
+
+header{
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  margin-top: 0% !important;
+  
+ 
+}
+main{
+   margin-top: 0%;
+    padding: 50px;
+}
+
+navbar{
+    margin-top: 0% !important;
+}
